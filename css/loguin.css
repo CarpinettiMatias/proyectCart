@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto' sans-serif;
+    background-image: url("../img/fondo.jpg");
+
+}
+.formlogin{
+    width: 400px;
+    height: 400px;
+    background-color: rgb(122, 122, 122);
+    margin: auto;
+    margin-top: 180px;
+    box-shadow: 7px 13px 37px #373737;
+    padding: 20px 30px;
+    color: black;
+    border-radius: 10px;
+}
+
+.formlogin h5{
+    margin: 0;
+    text-align: center;
+    height: 40px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid;
+    font-size: 20px;
+
+}
+
+.controls{
+    width: 100%;
+    border: 1px solid hotpink;
+    margin-bottom: 15px;
+    padding: 11px 10px;
+    background: #252323;
+    font-weight: bold;
+    border-radius: 5px;
+    color: black;
+}
+
+.buttons{
+    width: 100%;
+    height: 40px;
+    background: hotpink;
+    border: none;
+    color:white ;
+    margin-bottom: 16px;
+    border-radius: 5px;
+}
+.registro{
+    height: 40px;
+    text-align: center;  
+}
+
+.password{
+
+    height: 40px;
+    text-align: center; 
+    border-bottom: 1px solid;
+
+}
+
+.formlogin a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.formlogin a:hover{
+    text-decoration: underline;
+}
+
