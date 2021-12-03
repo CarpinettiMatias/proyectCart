@@ -8,14 +8,18 @@
     <link rel="stylesheet" href="../css/loguin.css">
 </head>
 <body>
-    <section class="formlogin">
-        <h5>Formulario de Ingreso</h5>
-        <input type="text" class="controls" name="usuario" value="" placeholder="usuario">
-        <input type="password" class="controls" name="contraseña" value="" placeholder="contraseña">
-        <input type="submit" class="buttons" name="" value="ingresar">
-        <p class="registro"><a href="./registro.html">Registrarte</a></p>
-        <p class="password"><a href="#">Olvidaste tu contraseña?</a></p>
-    </section>
+    <form  name='form' id='formLogin' class="formlogin">
+        <div class="form">
+            <h5>Ingreso</h5>
+            <input id='user'type="text" class="controls" name="" value="" placeholder="usuario">
+            <input id='password' type="password" class="controls" name="" value=""  placeholder="contraseña">
+            <input type="button" value='Ingresar' class='buttons' id="btn_getInto">
+            <p class="registro"><a href="./checkIn.html">Registrarte</a></p>
+            <p class="password"><a href="#">Olvidaste tu contraseña?</a></p>
+            <p class='warnings' id="warnings"></p>
+        </div>
+    </form>
     <script src="../js/loguin.js"></script>
+    <script src="../js/logic.js"></script>
 </body>
 </html>

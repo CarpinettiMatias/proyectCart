@@ -1,0 +1,29 @@
+/*
+
+function getUserList(){
+    let userList = JSON.parse(localStorage.getItem('userList'));
+
+    if(userList == null){
+        userList=
+        [
+            ['1', 'pablo', 'monte', 'pablo@gmail.com', '1234'],
+            ['2', 'marta' , 'liza', 'pepe@gmail.com', '1234']
+        ]
+    }
+    return userList;
+}
+
+function validateStart(pUser , pPassword){
+    let userList = getUserList();
+    let bAccess = false;
+
+    for(let i =0; i < userList.length; i++){
+        if(pUser == userList[i][1] && pPassword == userList[i][4]){
+            bAccess = true;
+            sessionStorage.setItem('usuarioActivo', userList[i][1]+ ' ' + userList[i][2]);
+        }
+    }
+
+    return bAccess;
+}
+*/
