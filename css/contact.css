@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    font-family: 'Roboto' sans-serif
+
+}
+body::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#f00,#f0f);
+   clip-path: circle(30% at right 70%);
+
+}
+body::after
+{
+    content: '';
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#2196f3,#e91e63);
+    clip-path: circle(20% at 10% 10%);
+    z-index: 0;
+
+}
+
+header{
+    width: 100%;
+    height: 20vh;
+    font-family: 'Roboto' sans-serif;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+}
+
+
+.container__header{
+    max-width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 0px 20px;
+}
+
+header .logo{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 90px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px black;
+}
+
+.container__nav{
+    position: relative;
+    height: 100%;
+}
+
+nav{
+    height: 100%;
+}
+
+nav ul{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li{
+    margin: 0px 20px;
+    list-style: none;
+}
+
+nav ul li a{
+    color: black;
+    font-size: 16px;
+    font-family: 'Roboto' sans-serif;
+
+
+}
+
+.select{
+    background-color: hotpink;
+    padding: 10px 30px;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 30px -5px gray;
+    cursor: pointer;
+    transition: box-shadow 500ms;
+}
+.select:hover{
+    box-shadow: 1px 1px 30px -5px #20202085;
+}
+.container{
+    position: absolute;
+    z-index: 1;
+}
+
+.validacion-input{
+    color:tomato;
+}
+
+.respuesta{
+   color:rgb(108, 154, 16);
+    padding-left:50px;
+    margin-top: 40%;
+
+}

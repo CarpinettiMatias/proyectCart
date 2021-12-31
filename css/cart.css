@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+*{
+	margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+}
+/* header*/
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: #161623;
+    font-family: 'Roboto' sans-serif;
+}
+body::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#f00,#f0f);
+   clip-path: circle(30% at right 70%);
+   z-index: -1;
+
+}
+body::after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#2196f3,#e91e63);
+    clip-path: circle(20% at 10% 10%);
+    z-index: -1;
+}
+
+
+
+header{
+    width: 100%;
+    height: 20%vh;
+    font-family: 'Roboto' sans-serif;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+}
+
+
+.container__header{
+    max-width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 0px 20px;
+}
+
+header .logo{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 90px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px black;
+}
+
+.container__nav{
+    position: relative;
+    height: 100%;
+}
+
+nav{
+    height: 100%;
+}
+
+nav ul{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li{
+    margin: 0px 20px;
+    list-style: none;
+}
+
+nav ul li a{
+    color:#fff;
+    font-size: 16px;
+    font-family: 'Roboto' sans-serif;
+
+
+}
+
+.select{
+    background-color: hotpink;
+    padding: 10px 30px;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 30px -5px gray;
+    cursor: pointer;
+    transition: box-shadow 500ms;
+}
+.select:hover{
+    box-shadow: 1px 1px 30px -5px #20202085;
+}
+
+
+/* cart*/
+
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+    margin-top: 10%;
+}
+.container > h1{
+	padding: 20px 0;
+    color: white;
+
+}
+.cart{
+	display: flex;
+}
+.products{
+	flex: 0.75;
+}
+.product{
+	display: flex;
+	width: 100%;
+	height: 200px;
+	overflow: hidden;
+	border: 1px solid gray;
+    border-radius: 15px;
+	margin-bottom: 20px;
+    box-shadow: 1px 1px 3px gray;
+    background-color: white;
+}
+.product:hover{
+	border: none;
+	box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+	transform: scale(1.01);
+}
+.product > img{
+	width: 300px;
+	height: 200px;
+	object-fit: cover;
+}
+.product > img:hover{
+	transform: scale(1.04);
+}
+.product-info{
+	padding: 20px;
+	width: 100%;
+	position: relative;
+}
+
+.product-name, .product-price, .product-offer{
+	margin-bottom: 20px;
+}
+.product-remove{
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	padding: 10px 25px;
+	background-color: green;
+	color: white;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.product-remove:hover{
+	background-color: white;
+	color: green;
+	font-weight: 600;
+	border: 1px solid green;
+}
+
+.product-quantity > input{
+	width: 40px;
+	padding: 5px;
+	text-align: center;
+}
+.fa{
+	margin-right: 5px;
+}
+.cart-total{
+	flex: 0.25;
+	margin-left: 20px;
+	padding: 20px;
+	height: 200px;
+    background-color: white;
+	border: 1px solid silver;
+	border-radius: 15px;
+    box-shadow: 1px 1px 3px gray;
+    
+}
+.cart-total p{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 40px;
+	font-size: 20px;
+}
+.cart-total a{
+	display: block;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	background-color: tomato;
+	color: white;
+	text-decoration: none;
+}
+.cart-total a:hover{
+	background-color: red;
+}
+@media screen and (max-width: 700px){
+	.remove{
+		display: none;
+	}
+	.product{
+		height: 150px;
+	}
+	.product > img{
+		height: 150px;
+		width: 200px;
+	}
+	.product-name, .product-price, .product-offer{
+		margin-bottom: 10px;
+	}
+}
+@media screen and (max-width: 900px){
+	.cart{
+		flex-direction: column;
+	}
+	.cart-total{
+		margin-left: 0;
+		margin-bottom: 20px;
+	}
+}
+@media screen and (max-width: 1220px){
+	.container{
+		max-width: 95%;
+	}
+}
